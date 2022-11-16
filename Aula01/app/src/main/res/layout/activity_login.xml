@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        style="@style/Edit_Text"
+        android:ems="10"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents" />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        style="@style/Edit_Text"
+        android:ems="10"
+        android:drawableRight="@drawable/ic_senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsuario" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:text="@string/entrar"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+
+    <TextView
+        android:id="@+id/tvCadastrousuario"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/novo_usuario"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="592dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_login_foreground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

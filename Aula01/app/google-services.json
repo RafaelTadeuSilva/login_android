@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "539147492424",
+    "project_id": "login-94121",
+    "storage_bucket": "login-94121.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539147492424:android:92a9c496ecdfc7f4788c7d",
+        "android_client_info": {
+          "package_name": "com.valter.aula01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539147492424-o9u3hrili3qv1uplh9k7tu3ds1kislk0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.valter.aula01",
+            "certificate_hash": "a63c2df32a527a58e6e8b69a4723d23147f885ef"
+          }
+        },
+        {
+          "client_id": "539147492424-3126hqfti72b65qd51s88gcvdbve85je.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC75Ewan_KQpHyU8uadZTD1spnW0XIR1HQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539147492424-3126hqfti72b65qd51s88gcvdbve85je.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

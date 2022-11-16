@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroUsuarioActivity">
+
+    <TextView
+        android:id="@+id/tvNomeCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNomeCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@id/tvNomeCadastro"
+        app:layout_constraintStart_toStartOf="@id/tvNomeCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeCadastro" />
+
+    <TextView
+        android:id="@+id/tvEmailCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/email"
+        app:layout_constraintEnd_toEndOf="@id/edtNomeCadastro"
+        app:layout_constraintStart_toStartOf="@id/edtNomeCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeCadastro" />
+
+    <EditText
+        android:id="@+id/edtEmailCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/tvEmailCadastro"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvEmailCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailCadastro" />
+
+    <TextView
+        android:id="@+id/tvSenhaCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/senha"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmailCadastro"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailCadastro" />
+
+    <EditText
+        android:id="@+id/edtSenhaCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tvSenhaCadastro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSenhaCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/tvSenhaCadastro" />
+
+    <TextView
+        android:id="@+id/tvConfirmarSenhaCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/confirmar_senha"
+        app:layout_constraintEnd_toEndOf="@+id/edtSenhaCadastro"
+        app:layout_constraintStart_toStartOf="@+id/edtSenhaCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenhaCadastro" />
+
+    <EditText
+        android:id="@+id/edtConfirmarSenhaCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tvConfirmarSenhaCadastro"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvConfirmarSenhaCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/tvConfirmarSenhaCadastro" />
+
+    <Button
+        android:id="@+id/btnCadastrarUsuario"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="@string/cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtConfirmarSenhaCadastro" />
+</androidx.constraintlayout.widget.ConstraintLayout>
